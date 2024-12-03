@@ -1,0 +1,277 @@
+
+/* body general */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-image: url('../images/fondoooo.png'); 
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100% auto; 
+    height: 100vh;
+}
+
+
+/* Contenedor de la flecha */
+.arrow-container {
+    position: absolute; 
+    top: 70px; 
+    left: 20px; 
+    z-index: 10; 
+}
+
+
+/* Estilo de la flecha */
+.arrow {
+    width: 50px;
+    height: auto;
+}
+
+/* Estilo para el encabezado */
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #004080;
+    padding: 10px;
+    color: white;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.header-left h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.header-right {
+    display: none;
+}
+
+.cart-button {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.content-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Contenedor de productos */
+.productos-container {
+    display: flex;
+    margin-top: 80px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 70%;
+    flex-wrap: wrap;
+    margin-left: -105px;
+}
+
+.producto {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 10px 15px;
+    width: 130%; /* Aumenta el ancho del contenedor */
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    height: 255px;
+}
+.producto-img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.producto-info {
+    flex: 1;
+    overflow: hidden;
+}
+
+.producto-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.producto-text h3, .producto-text p {
+    margin: 0;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+.producto-text h3 {
+    font-size: 1.8rem;
+}
+
+.producto-text p {
+    font-size: 1.2rem;
+}
+
+.eliminar-btn {
+    background-color: #ff4c4c;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+    align-self: flex-end;
+}
+
+.eliminar-btn:hover {
+    background-color: #e03a3a;
+}
+
+.purchase-details {
+    margin-top: 80px !important;
+    background-color: #f0cb97;
+    color: black;
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    min-width: 250px;
+    border-radius: 5px;
+    margin-left: -150px;
+
+}
+
+.purchase-details h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.purchase-details label {
+    margin-right: 10px;
+    width: 40%;
+}
+
+.purchase-details input {
+    padding: 5px;
+    width: 50%;
+    height: 30px;
+}
+
+.product-list .product-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.finalize-button {
+    text-decoration: none;
+    background-color: #e03a3a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer__grupo2, .footer__reserved, .footer__buttons {
+    margin: 0 10px;
+}
+
+.footer__buttons img {
+    width: 30px;
+    height: auto;
+}
+
+
+
+/* Responsividad y control de tamaños */
+.contenedor-principal, .content-container {
+    width: 100%;
+    max-width: 1200px;
+    min-width: 900px;
+    margin: 0 auto;
+}
+
+/*: Styles for Section Footer */
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 0;
+    position: fixed; /* Esto hace que el footer esté fijo en la parte inferior */
+    bottom: 0; /* Lo coloca en la parte inferior de la pantalla */
+    left: 0; /* Asegura que esté alineado al borde izquierdo */
+    width: 100%; /* Asegura que ocupe todo el ancho de la pantalla */
+    z-index: 10; /* Asegura que el footer se quede por encima de otros elementos */
+}
+
+.footer__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+@media (width >= 768px) {
+    .footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .productos-container {
+        gap: 25px;
+    }
+    .producto {
+        max-width: 600px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .productos-container {
+        gap: 30px;
+    }
+    .producto {
+        max-width: 700px;
+    }
+}

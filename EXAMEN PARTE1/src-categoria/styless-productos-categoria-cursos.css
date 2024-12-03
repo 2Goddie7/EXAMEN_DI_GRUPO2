@@ -1,0 +1,402 @@
+/* Declaration of variables CSS */
+:root {
+    --colorRojo: #d43f3a;
+    --colorAzul:  #055092;
+    --colorPiel:   #f0cb9f;
+    --colorPlomo:   #d9d9d9;
+    --colorBlanco: #FFFFFF;
+    --colorNegro: #000;
+    --fuentePrincipal: "Montserrat", sans-serif;
+}
+
+/* General styles for the document HTML  */
+html {
+    background-image: url('../img-globales/fondos/4_1.webp');
+    background-size: 100% 100%; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+}
+
+body{
+    font-family: var(--fuentePrincipal);
+    display: flex;
+    flex-direction: column;  
+    min-height: 100vh; 
+    margin: 0; 
+}
+
+.t{
+    background: var(--colordos);
+    text-align: center;
+    padding: 2rem;
+    color: var(--colorBlanco);
+    list-style: non;
+    text-decoration: none;
+}
+/*BORDES DE LAS CAJAS*/
+
+section {
+    flex: 1;}
+
+
+.footer {
+
+    padding: 20px 0; 
+    text-align: center; 
+}
+/*FIN DE LOS BORDES*
+
+
+/*MODIFICAR EL TITULO PRINCIPAL*/
+
+.navbar__container {
+    display: flex;            
+    justify-content: center; 
+    align-items: center;      
+    height: 100px;            
+    background-color: var(--colorAzul); 
+}
+
+.navbar__logo {
+    font-size: 2rem;  
+    font-weight: bold;  
+    cursor: pointer;
+    color: var(--colorBlanco);
+}
+/* fin de modificar le titulo */
+
+
+
+/*modificar el titulo2*/
+.hero_text {
+    
+    display: flex;
+    justify-content: center; 
+    align-items: center;  }
+
+.hero_title{
+    background-color: var(--colorBlanco);
+    padding: .7rem 2rem;
+    font-size: 2rem;
+    margin-top: -50px;
+
+}
+
+
+
+
+.hero_textnew {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin: 0; 
+}
+
+/* Estilo de la caja azul */
+.hero_titlenew {
+
+    display: inline-flex;
+    justify-content: center; 
+    align-items: center; 
+    font-size: 2rem;
+    padding: 1rem;
+    width: fit-content; 
+}
+
+
+
+
+
+.hero_button {
+    display: inline-block; 
+    margin-left: 5rem; 
+    width: auto; 
+    height: auto; 
+    padding: 0; 
+    border: none; 
+}
+
+.flecha-img {
+    display: block; 
+    max-width: 100%; 
+    height: auto; 
+    margin-left: 50px; 
+
+   
+}
+
+.hero_button .flecha-img:hover{
+    transform: scale(1.4);
+}
+
+
+/*fin de modificar le tiutlo 2*/
+
+
+
+
+/*contenido*/
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.box-button1{
+    margin-top: 0px;
+    background-color: var(--colorRojo);
+    color: var(--colorBlanco);
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: normal;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.4s ease;
+    padding: 8px;
+    border-radius: 6px;
+} 
+
+.box-button2{
+    margin-top: 0px;
+    background-color: var(--colorRojo);
+    color: var(--colorBlanco);
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: normal;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.4s ease;
+    padding: 8px;
+    border-radius: 6px;
+}
+.box-button3{
+    margin-top: 0px;
+    background-color: var(--colorRojo);
+    color: var(--colorBlanco);
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: normal;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.4s ease;
+    padding: 8px;
+    border-radius: 6px;
+}
+.box-button1:hover{
+    transform: scale(0.9);
+}
+.box-button2:hover{
+    transform: scale(0.9);
+}
+.box-button3:hover{
+    transform: scale(0.9);
+}
+.box-group{
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;  
+    
+}
+
+
+
+/*caja1*/
+.large-box1{
+    display: flex;    
+    flex-direction: column;        
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.box1, .box2, .box3, .box4 {
+    width: 100%;  
+    height: 250px; 
+    background-color: var(--colorPlomo); 
+    animation: fadeIn 1s ease-in-out forwards; 
+}
+
+
+/*CAJAS*/
+
+/*CAJA 1*/
+.box1-title2{
+    background-color: var(--colorRojo);
+}
+/*FIN CAJA1*/
+.box2-title2{
+    background-color: var(--colorRojo);
+    
+}
+
+.box3-title2{
+    background-color: var(--colorRojo);
+}
+.box4-title2{
+    background-color: var(--colorRojo);
+}
+
+
+/* Centrando los títulos dentro de las cajas */
+.box1-title1, .box2-title1, .box3-title1, .box4-title1 {
+    margin: 0; 
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+.box1-title1{
+    margin-top: -10px;
+}
+.box3-title1{
+    margin-top: -10px;
+}
+.box1-title2, .box2-title2, .box3-title2, .box4-title2 {
+    margin-top: 10px; 
+    background-color: var(--colorRojo);
+    color: var(--colorBlanco);
+    padding: 5px 10px; 
+    font-size: 16px;
+    font-weight: normal;
+    cursor: pointer;
+}
+.box1
+
+.box1-text, .box2-text, .box3-text, .box4-text{
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box2-text{
+    margin-top: -10px;
+}
+
+.box1, .box2, .box3, .box4 {
+    display: flex;              
+    justify-content: center;    
+    align-items: center;        
+    flex-direction: column;     
+}
+
+.box1-image, .box2-image, .box3-image, .box4-image {
+    padding-top: 1rem;       
+    width: 150px;             
+    height: 150px;            
+    margin: 0 10px;          
+    margin-right: 0.5rem;
+}
+.box3-image{
+    padding-top: 3rem;       
+    margin-top: -35px;
+}
+
+
+/* Modificar el footer */
+.footer {
+    display: flex;                
+    justify-content: center;
+    flex-direction: column; 
+    align-items: center;                      
+    background-color: #000;
+    padding: 0.5rem; 
+    height: auto; 
+    max-height: 150px; 
+}
+
+p.footer__title1 {
+    margin: 0;
+    padding: 0.3rem; 
+}
+
+p.footer__title2 {
+    margin: 0;
+    padding: 0.3rem; 
+}
+
+.footer__title1,
+.footer__title2 {
+    display: flex;                     
+    text-align: center;             
+    color: #d9d9d9;
+}
+
+.footer__buttons {
+    text-align: center;                     
+    cursor: pointer;
+    padding: 0.3rem; 
+}
+
+.footer__buttons img {
+    width: 25px;  
+    height: 25px;
+    margin: 0 8px; 
+    object-fit: contain; 
+}
+.tituloss{
+    
+    background-color: var(--colorBlanco);
+    height: 70px;
+}
+/* Pantallas de 1024px y menos */
+@media (width>= 1024px) {
+    /* Navbar */
+    .navbar__container {
+        height: 80px;
+    }
+
+    .navbar__logo {
+        font-size: 1.5rem; 
+    }
+
+    /* Hero */
+    .hero_text {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .hero_title {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .hero_button {
+        margin-left: 0; 
+        margin-top: 10px; 
+    }
+
+    /* Cajas (Box groups) */
+    .large-box1,.large-box2 {
+        flex-direction: row; 
+    }
+
+    /* Footer */
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0.5rem; 
+        max-height: 120px; 
+    }
+
+    /* Footer */
+    .footer .footer__title1 {
+        margin: .5rem; 
+    }
+    
+}
+@media (max-width:536px){
+    .tituloss{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        height: 120px; 
+    }
+    .large-box1{
+    flex-direction: column;
+         }
+    .button{
+    display: inline-block; 
+    }
+}
+

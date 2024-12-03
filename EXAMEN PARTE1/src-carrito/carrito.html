@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PoliVentas</title>
+        <link rel="stylesheet" href="./src/css/normalize.css">
+        <link rel="stylesheet" href="./src/css/styles.css">
+        <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/8931/8931836.png" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <div class="background-container">
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-left">
+            <h1>PoliVentas</h1>
+        </div>
+        <div class="header-right">
+            <button class="cart-button">&#128722;</button>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <section class="content-container">
+            <!-- Flecha en la parte izquierda, encima del cuadro de productos -->
+            <div class="arrow-container">
+                <a href="../" class="arrow-link">
+                    <img src="./src/images/flecha-izquierda.png" alt="Flecha hacia abajo" class="arrow">
+                </a>
+            </div>
+            
+            
+
+            <!-- Sección de productos -->
+            <section class="products">
+                <div class="container">
+                    <div class="productos-container">
+                        <!-- Producto 1 -->
+                        <div class="producto">
+                            <img src="./src/images/desayuno proteico.jpg" alt="Almuerzo Proteico" class="producto-img">
+                            <div class="producto-text">
+                                <h3>Almuerzo Proteico</h3>
+                                <p>Si buscas una opción nutritiva que te mantenga fuerte durante todo el día, el almuerzo proteico es tu mejor elección. Tu cuerpo recibirá lo que necesita para rendir al máximo.</p>
+                                <button class="eliminar-btn">Eliminar</button>
+                            </div>
+                        </div>
+
+                        <!-- Producto 2 -->
+                        <div class="producto">
+                            <img src="./src/images/Curso redes.jpg" alt="Curso de Redes" class="producto-img">
+                            <div class="producto-text">
+                                <h3>Curso de Redes</h3>
+                                <p>Para que 'Mamita Moni no te deje a segunda, no nos falles mi guagua. Aprenderás desde lo más básico hasta conceptos avanzados de conectividad. Prepárate para ser un experto en un área clave para tu futuro profesional.</p>
+                                <button class="eliminar-btn">Eliminar</button>
+                            </div>
+                        </div>
+
+                        <!-- Producto 3 -->
+                        <div class="producto">
+                            <img src="./src/images/Oufit casual.webp" alt="Oufit casual" class="producto-img">
+                            <div class="producto-text">
+                                <h3>OUTFIT CASUAL</h3>
+                                <p>Eleva tu estilo con un outfit casual que te hará destacar. Con piezas que combinan confort y estilo streetwear, lograrás un look fresco y único. Es la elección ideal para aquellos que desean marcar la diferencia sin perder la comodidad.</p>
+                                <button class="eliminar-btn">Eliminar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección de detalle de compra -->
+            <section class="purchase-details">
+                <h2>DETALLE COMPRA</h2>
+                <div class="input-container">
+                    <label for="articulos">Artículos</label>
+                    <input type="text" id="articulos" placeholder="Ingresa cantidad">
+                </div>
+                <div class="input-container">
+                    <label for="comision">Comisión</label>
+                    <input type="text" id="comision" placeholder="Ingresa comisión">
+                </div>
+                <div class="input-container">
+                    <label for="total">Total (impuestos)</label>
+                    <input type="text" id="total" placeholder="Ingresa total">
+                </div>
+                <div class="input-container">
+                    <label for="promo-code">Código Promo</label>
+                    <input type="text" id="promo-code" placeholder="Ingresa código">
+                </div>
+                <a href="../index.html">
+                    <button class="finalize-button">FINALIZAR COMPRA</button>
+                </a>
+                
+            </section>
+              
+        </section>
+    </main>
+
+    <!-- Start - Section Footer -->
+    <footer class="footer">
+        <div class="footer__grupo2">
+            <p>Grupo 2</p>
+        </div>
+        <div class="footer__reserved">
+            <p>Derechos reservados</p>
+        </div>
+        <div class="footer__buttons">
+            <img src="./src/images/Facebook.png" alt="Facebook" loading="lazy">
+            <img src="./src/images/twiterr.png" alt="twiterr" loading="lazy">
+            <img src="./src/images/Google.png" alt="Google" loading="lazy">
+        </div>
+    </footer>
+    
+    
+    <!-- End - Section Footer -->
+</body>
+</html>
