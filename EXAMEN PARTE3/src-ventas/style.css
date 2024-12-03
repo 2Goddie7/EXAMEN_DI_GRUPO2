@@ -1,0 +1,245 @@
+/* Variables de color y tipografia */
+:root {
+    --coloruno: #D43F3A;
+    --colordos: #055092;
+    --colortres: #f8debb;
+    --colorcuatro: #D9D9D9;
+    --colorcinco: #ffffff;
+    --colorseis: #000000;
+    --letra: sans-serif, "Montserrat" ;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--letra);
+    text-decoration: none;
+}
+
+
+html, body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header, .t{
+    background: var(--colordos);
+    text-align: center;
+    padding: 2rem;
+    color: var(--colorcinco);
+}
+
+.titulo {
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: var(--colordos);
+    background: var(--colorcuatro);
+
+}
+.arrowleft{
+    text-align: center;
+    margin-bottom:1rem ;
+}
+.arrowleft .flecha i {
+    font-size: 2.3rem;
+    color: var(--colordos);
+    transition: transform 0.2s;
+}
+
+.arrowleft .flecha i:hover {
+    transform: scale(1.4);
+}
+
+@media (width > 680px){
+    .titulo {
+        padding: 3rem;
+        font-size: 2rem;
+
+    }
+    .arrowleft{
+        position: absolute;
+    }
+    .arrowleft .flecha i {
+        font-size: 2.8rem;
+
+    }
+
+
+
+}
+
+section{
+    position: relative;
+    flex: 1;
+    background-image: url(./img/fondo.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 2rem 0 8rem 0;
+}
+section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1; 
+}
+
+.contenedor{
+    position: relative;
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    z-index: 4;
+}
+
+.contenedorFile{
+    width: 100%; 
+    max-width: 35rem;
+    background-color: var(--colorcuatro);
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+.contenedorFile label{
+    padding-bottom: 1rem;
+}
+.contenedorFile input{
+    padding-top: 1rem;
+}
+.contenedorFile img{
+    width: 20rem;
+}
+.contenedorInfo{
+    width: 100%; 
+    max-width: 35rem;
+    background-color: var(--colortres);
+    height: 35rem;
+    border-radius: 2rem;
+    margin-top: 5rem;
+    padding: 2rem 1rem 2rem 1rem;
+}
+
+.contenedorInfo  div{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+.contenedorInfo  div label{
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin-bottom: .3rem;
+}
+.contenedorInfo  div input{
+    text-align: center;
+    padding: .3rem;
+    display: flex;
+}
+.contenedorInfo .descripcion textarea{
+    text-align: center;
+    min-height: 60px; 
+    max-height: 100px; 
+    resize: vertical;
+}
+.contenedorInfo .precio{
+    width: 20%;
+}
+.contenedorInfo .estado select,
+.contenedorInfo .categoria select {
+    width: 45%;
+    margin: 0 auto;
+    text-align: center;
+    padding: .3rem;
+
+}
+
+.contenedorInfo div button{
+    width: 30%;
+    margin: 0 auto;
+    background-color: var(--coloruno);
+    color: var(--colorcinco);
+    border: none;
+    padding: .5rem;
+    cursor: pointer;
+    transition: .7s background-color ease;
+}
+.contenedorInfo div button:hover{
+    background-color: var(--colordos);
+}
+
+@media (width > 800px){
+    .contenedor {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 2rem; 
+        width: 100%;
+    }
+
+    .contenedorInfo, .contenedorFile {
+        flex: 1; 
+        max-width: 40%; 
+        margin: 0 1rem;
+    }
+
+}
+@media (width > 1200px){
+    .contenedor {
+        width: 80%;
+        margin-top: 2rem;
+    }
+    .contenedorInfo, .contenedorFile {
+        flex: 1; 
+        max-width: 30%; 
+        margin: 0 1rem;
+    }
+}
+
+footer {
+    background-color: var(--colorseis);
+    color: var(--colorcinco);
+    padding: 1rem 1rem .8rem 1rem;
+    position: relative;
+    bottom: 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.3);
+}

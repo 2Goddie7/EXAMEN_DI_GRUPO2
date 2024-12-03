@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style-servicio.css">
+    <script src="https://kit.fontawesome.com/0c610c8e2d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <h1><a class="t" href="../index.html">PoliVentas</a></h1>
+    </header> 
+    <main>
+        <div class="titulo">
+            <div class="arrowleft">
+                <a class="flecha" href="../index.html"><i class="fa-solid fa-circle-arrow-left"></i></a>
+            </div>
+            <h3>SERVICIOS</h3>
+        </div>
+    </main>
+    <section>
+        <div class="cajaInfo">En PoliVentas, ofrecemos una plataforma donde los estudiantes de la Politécnica pueden</div>
+            <div class="caja">
+                <div class="card">
+                    <div class="img">
+                        <img src="./img/img.webp" alt="Comprar">
+                    </div>
+                    <div class="info">
+                        <h3>Comprar</h3>
+                        <p>Productos nuevos o usados de manera segura y confiable.</p>
+                        
+                    </div>
+                    <div class="button">
+                        <a href="../index.html">Ver más</a>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="img">
+                        <img src="./img/img.webp" alt="Vender">
+                    </div>
+                    <div class="info">
+                        <h3>Vender</h3>
+                        <p> Cualquier artículo que ya no necesites a otros estudiantes.</p>
+                    </div>
+                    <div class="button">
+                        <a href="../src-ventas/ventas.html">Ver más</a>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="img">
+                        <img src="./img/img.webp" alt="Alquilar">
+                    </div>
+                    <div class="info">
+                        <h3>Alquilar</h3>
+                        <p>Productos para cubrir necesidades temporales.</p>
+                    </div>
+                    <div class="button">
+                        <a href="../src-alquilar/alquilar.html">Ver más</a>
+                    </div>
+                </div>
+            
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>Grupo 2</p>
+            <p>Derechos reservados</p>
+            <div class="social-icons">
+                <a href="#"><img src="../img-globales/facebook.webp" alt="Facebook" loading="lazy"></a>
+                <a href="#"><img src="../img-globales/twitter.webp" alt="Twitter" loading="lazy"></a>
+                <a href="#"><img src="../img-globales/google.webp" alt="Google" loading="lazy"></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+<script>
+    // script.js
+    document.getElementById("comprarBtn").addEventListener("click", function() {
+        // Redirigir a index.html y agregar #categories-container al final de la URL
+        window.location.href = "../index.html#categories-container";
+    });
+</script>
+</html>
+
+

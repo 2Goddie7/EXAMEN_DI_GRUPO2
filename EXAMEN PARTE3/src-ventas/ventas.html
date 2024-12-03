@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta Politecnica</title>
+    <script src="https://kit.fontawesome.com/0c610c8e2d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1><a class="t" href="../index.html">PoliVentas</a></h1>
+    </header>
+    <main>
+        <div class="titulo">
+            <div class="arrowleft">
+                <a class="flecha" href="../index.html"><i class="fa-solid fa-circle-arrow-left"></i></a>
+            </div>
+            <h3>¿Qué desea Vender?</h3>
+        </div>
+    </main>
+
+    <section>
+        <div class="contenedor">
+            <div class="contenedorInfo">
+                <div class="title">
+                    <label>Titulo</label>
+                    <input id="titulo" type="text" placeholder="Nombre del Objecto">
+                </div>
+                <div class="descripcion">
+                    <label>Descripcion</label>
+                    <textarea id="Descripcion" name="descripcion" placeholder="Escribe la descripción del objeto"></textarea>
+                </div>
+                <div class="precio">
+                    <label>Precio</label>
+                    <input  id="valor" type="number" placeholder="Valor" min="0" step="0.01">
+                </div>
+                <div class="categoria">
+                    <label>Categoría</label>
+                    <select id="categoria" name="categoria">
+                        <option value="ropa">Ropa</option>
+                        <option value="Comida">Comida</option>
+                        <option value="libros">Libros</option>
+                        <option value="Cursos">Cursos</option>
+                    </select>
+                </div>
+                <div class="estado">
+                    <label>Estado</label>
+                    <select id="estado" name="estado">
+                        <option value="nuevo">Nuevo</option>
+                        <option value="usado">Usado</option>
+                    </select>
+                </div>
+                <div>
+                    <a href="../index.html">
+                        <button id="btn">Enviar</button>
+                    </a>
+                </div>
+                
+            </div>
+
+            <div class="contenedorFile">
+                <label>Selecciona un archivo</label>
+                <img src="./img/carga.webp" alt="">
+                <input type="file" id="archivo" name="archivo">
+            </div>
+        </div>
+    </section>
+
+    
+    <footer>
+        <div class="footer-content">
+            <p>Grupo 2</p>
+            <p>Derechos reservados</p>
+            <div class="social-icons">
+                <a href="#"><img src="../img-globales/facebook.webp" alt="Facebook" loading="lazy"></a>
+                <a href="#"><img src="../img-globales/twitter.webp" alt="Twitter" loading="lazy"></a>
+                <a href="#"><img src="../img-globales/google.webp" alt="Google" loading="lazy"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        
+        const titulo = document.querySelector('#titulo')
+        const descripcion = document.querySelector('#Descripcion')
+        const precio = document.querySelector('#valor')
+        const btn = document.querySelector('#btn')
+
+        btn.addEventListener('click', () => {
+            if(btn){
+                titulo.value = '';
+                descripcion.value = '';
+                precio.value = '';
+                btn.textContent = 'Enviado';
+                setTimeout(() => {
+                btn.textContent = 'Enviar';
+                }, 1000);
+            }
+        });
+
+    </script>
+</body>
+</html>

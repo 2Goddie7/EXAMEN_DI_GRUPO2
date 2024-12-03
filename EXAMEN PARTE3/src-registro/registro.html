@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro - PoliVentas</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/8931/8931836.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style-registro.css">
+    <script src="https://kit.fontawesome.com/0c610c8e2d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+
+    <header>
+        <a href="../index.html" style="text-decoration: none; color: inherit;">
+            <h1 class="titulo-sitio">PoliVentas</h1>
+        </a>
+        
+    </header>
+
+    <!-- Fin del Navbar -->
+
+    <!-- Caja para la flecha -->
+
+    <div class="arrowleft">
+        <a class="flecha" href="../index.html"><i class="fa-solid fa-circle-arrow-left"></i></a>
+    </div>
+
+    <!-- Fin de la caja para la flecha  -->
+
+
+    <!-- Formulario -->
+    <main class="contenedor-registro">
+        <h2 class="titulo-registro">Registro</h2>
+        <span class="info">
+            <h3>Regístrate para comprar y vender artículos entre estudiantes</h3>
+        </span>
+        <form action="#" method="POST">
+            <div class="form-grupo">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+            </div>
+
+            <div class="form-grupo">
+                <label for="apellidos">Apellido</label>
+                <input type="text" id="apellidos" name="apellidos" placeholder="Ingrese su apellido" required>
+            </div>
+
+            <div class="form-grupo">
+                <label for="fecha">Fecha de Nacimiento</label>
+                <div class="fecha">
+                    <input type="number" id="dia" name="dia" min="1" max="31" placeholder="DD" required>
+                    <input type="number" id="mes" name="mes" min="1" max="12" placeholder="MM" required>
+                    <input type="number" id="año" name="año" min="1900" max="2024" placeholder="AAAA" required>
+                </div>
+            </div>
+
+            <div class="form-grupo">
+                <label for="correo">Correo Electrónico</label>
+                <input type="email" id="correo" name="correo" placeholder="email@epn.edu.ec" required>
+            </div>
+
+            <div class="form-grupo">
+                <label for="contraseña">Contraseña</label>
+                <input type="password" id="contraseña" name="contraseña" placeholder="password" required>
+            </div>
+
+            <span class="condiciones-texto">
+                Al registrarte aceptas nuestros términos y condiciones, y la política de seguridad y privacidad.
+            </span>
+
+            <button onclick="window.location.href='index.html';" type="submit"
+                class="boton-registro">Registrarse</button>
+        </form>
+
+        <div class="img-registro">
+            <img src="../img-globales/google.webp" alt="Google" loading="lazy">
+            <img src="../img-globales/microsoft.webp" alt="Outlook" loading="lazy">
+            <img src="../img-globales/facebook.webp" alt="Facebook" loading="lazy">
+        </div>
+
+        <span class="derechos-reservados">Escuela Politécnica Nacional © Todos los Derechos Reservados 2024</span>
+    </main>
+
+    <!-- Fin del Formulario -->
+
+    <footer>
+        <div class="footer-content">
+            <p>Grupo 2</p>
+            <p>Derechos reservados</p>
+            <div class="social-icons">
+                <a href="#"><img src="../img-globales/facebook.webp" alt="Facebook" loading="lazy"></a>
+                <a href="#"><img src="../img-globales/twitter.webp" alt="Twitter" loading="lazy"></a>
+                <a href="#"><img src="../img-globales/google.webp" alt="Google" loading="lazy"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
